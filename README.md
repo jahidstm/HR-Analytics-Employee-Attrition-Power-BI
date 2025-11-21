@@ -17,7 +17,7 @@ Explore the full interactive report here:
 
 ## 📸 Dashboard Preview
 
-![HR Dashboard Preview]([YOUR_IMAGE_FILENAME.jpg])
+![HR Dashboard Preview](Employee-Attrition-Dashboard.jpg)
 
 ---
 
