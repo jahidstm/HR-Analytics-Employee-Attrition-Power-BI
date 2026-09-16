@@ -1,71 +1,45 @@
-![Power BI](https://img.shields.io/badge/Tool-Power_BI-yellowgreen?style=for-the-badge&logo=powerbi)
-![Status](https://img.shields.io/badge/Status-Completed-green?style=for-the-badge)
-![Analysis](https://img.shields.io/badge/Focus-HR_Analytics-blue?style=for-the-badge)
+# HR Analytics — Employee Attrition Dashboard
 
-# 📊 HR Analytics: Employee Attrition Dashboard
+An interactive Microsoft Power BI dashboard for exploring employee attrition by demographics, job role, overtime, satisfaction, income, and tenure.
 
-This project involves a deep-dive analysis of HR data to understand workforce dynamics and identify the root causes of employee attrition. Using **Microsoft Power BI**, I built an interactive dashboard that helps HR managers monitor key metrics and take data-driven actions to improve employee retention.
+> **Project status:** Completed dashboard files are included. A hosted Power BI report link is listed below; availability is controlled by the external Power BI service.
 
----
+[Open the live Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTI2ZDE4NWQtZTIyZC00YzI4LTg0NWItODFjNThlZmQwNjE3IiwidCI6Ijg4NDk5MWYzLTBjNjktNDMzYi04MDA2LTVjMGFhM2IwNTkwNCIsImMiOjEwfQ%3D%3D)
 
-## 🚀 Live Interactive Dashboard
+## Dashboard preview
 
-Explore the full interactive report here:
-### ➡️ [Click to View Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTI2ZDE4NWQtZTIyZC00YzI4LTg0NWItODFjNThlZmQwNjE3IiwidCI6Ijg4NDk5MWYzLTBjNjktNDMzYi04MDA2LTVjMGFhM2IwNTkwNCIsImMiOjEwfQ%3D%3D)
+![Employee attrition dashboard](Employee-Attrition-Dashboard.jpg)
 
----
+## Problem and analysis scope
 
-## 📸 Dashboard Preview
+The dashboard is intended to help HR users ask who is leaving, which roles and age groups show higher attrition, and how overtime and other employee attributes relate to turnover. It includes KPI measures, slicers, and visuals built in Power BI.
 
-![HR Dashboard Preview](Employee-Attrition-Dashboard.jpg)
+## Methods and tools
 
----
+- Power Query transformations, including categorical mappings.
+- DAX measures for total employees, attrition count, and attrition rate.
+- A star-schema model for the report.
+- Microsoft Power BI and the included `.pbix` report.
 
-## 🎯 Project Objective
+## Dataset
 
-The goal of this analysis was to answer critical business questions:
-1.  **Why are employees leaving?** (Identifying key drivers of attrition).
-2.  **Who is leaving?** (Demographic and job role analysis).
-3.  **What is the impact?** (Understanding the correlation between overtime, age, and turnover).
+The repository includes `WA_Fn-UseC_-HR-Employee-Attrition.csv`, described in the project as the IBM HR Analytics Employee Attrition & Performance dataset. The CSV contains 1,470 rows and employee attributes such as education, job role, monthly income, and years at company. The repository does not include a formal citation or source URL; consult the dataset publisher before redistribution.
 
----
+## Use the files
 
-## 💡 Key Insights & Findings
+1. Download `Employee-Attrition-Dashboard.pbix`.
+2. Open it in Power BI Desktop.
+3. If prompted, point the report to the included CSV and refresh the model.
+4. Use the report filters and visuals to explore the analysis.
 
-- **High Risk Age Group:** Employees aged **29-31** show the highest attrition rate, indicating a retention risk among young professionals.
-- **Role-Specific Turnover:** 'Sales Executives' and 'Laboratory Technicians' have the highest turnover rates compared to other roles.
-- **The Overtime Factor:** Data reveals a strong correlation between **Overtime** and attrition. Employees working overtime are significantly more likely to leave.
-- **Overall Attrition:** The company's current overall attrition rate stands at **16%**.
+## Reported observations
 
----
+The original project notes higher observed attrition among ages 29–31, Sales Executives and Laboratory Technicians, and employees working overtime, plus an overall attrition figure of 16%. These are observations from this supplied dataset/report, not general workforce conclusions; no independent validation is included.
 
-## 🛠️ Tools & Techniques Used
+## Limitations and license
 
-- **Microsoft Power BI:** For data visualization and dashboarding.
-- **Power Query:** - Data cleaning and transformation.
-    - Created **Conditional Columns** to map numerical values (1, 2, 3) to meaningful text (Low, Medium, High) for Satisfaction and Education levels.
-- **DAX (Data Analysis Expressions):** - Calculated complex measures like `Attrition Rate %`, `Total Employees`, and `Attrition Count`.
-    - Used `CALCULATE` and `DIVIDE` functions for accurate KPI tracking.
-- **Data Modeling:** Established a star schema for efficient query performance.
+This is a retrospective dataset/report and does not establish causation or predict individual outcomes. It is not a live HR system. No `LICENSE` file is present, so license status is **not specified**.
 
----
+## Author
 
-## 📂 Dataset
-
-- **Source:** IBM HR Analytics Employee Attrition & Performance (Kaggle).
-- **Description:** The dataset contains 1470 rows and includes fields like Education, Job Role, Monthly Income, Years at Company, etc.
-
----
-
-## 🚀 How to Use This Repository
-
-1.  Download the **`.pbix`** file to view the raw Power BI project.
-2.  Check the **snapshots** folder for high-quality images of the dashboard.
-3.  Read the analysis summary above to understand the business context.
-
----
-
-### 👤 Author
-
-**Jahid Hasan** Aspiring Data Analyst | Software Engineering Student  
-[LinkedIn](https://linkedin.com/in/jahidstm) | [GitHub](https://github.com/jahidstm)
+Jahid Hasan — [GitHub](https://github.com/jahidstm) · [LinkedIn](https://www.linkedin.com/in/jahidstm/)
